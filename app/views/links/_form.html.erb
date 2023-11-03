@@ -1,0 +1,6 @@
+<%= form_with model: link do |f| %>
+  <div class="flex gap-2 items-center">
+    <%= f.url_field :url, placeholder: "https://example.org/", required: true, autofocus: true, class: "flex-grow rounded" %>
+    <%= f.button "Save", class: "px-3 py-2 bg-gray-100 rounded" %>
+  </div>
+<% end %>
